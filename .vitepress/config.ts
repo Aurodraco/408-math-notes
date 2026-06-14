@@ -26,7 +26,7 @@ export default defineConfig({
       { text: '组成原理', link: '/computer-organization/' },
       { text: '操作系统', link: '/operating-system/' },
       { text: '计算机网络', link: '/computer-network/' },
-      { text: '数学', link: '/math/' },
+      { text: '数学', link: '/math/calculus/' },
     ],
 
     sidebar: {
@@ -90,19 +90,31 @@ export default defineConfig({
       ],
       '/math/': [
         {
-          text: '考研数学',
+          text: '高等数学',
           collapsed: false,
           items: [
-            { text: '函数极限连续', link: '/math/' },
-            { text: '一元函数微分学', link: '/math/calculus-differential' },
-            { text: '一元函数积分学', link: '/math/calculus-integral' },
-            { text: '向量与空间解析几何', link: '/math/vector-geometry' },
-            { text: '多元函数微分学', link: '/math/multi-differential' },
-            { text: '多元函数积分学', link: '/math/multi-integral' },
-            { text: '无穷级数', link: '/math/infinite-series' },
-            { text: '常微分方程', link: '/math/ode' },
-            { text: '线性代数', link: '/math/linear-algebra' },
-            { text: '概率统计', link: '/math/probability' },
+            { text: '函数极限连续', link: '/math/calculus/' },
+            { text: '一元函数微分学', link: '/math/calculus/differential' },
+            { text: '一元函数积分学', link: '/math/calculus/integral' },
+            { text: '向量与空间解析几何', link: '/math/calculus/vector-geometry' },
+            { text: '多元函数微分学', link: '/math/calculus/multi-differential' },
+            { text: '多元函数积分学', link: '/math/calculus/multi-integral' },
+            { text: '无穷级数', link: '/math/calculus/infinite-series' },
+            { text: '常微分方程', link: '/math/calculus/ode' },
+          ],
+        },
+        {
+          text: '线性代数',
+          collapsed: true,
+          items: [
+            { text: '线性代数', link: '/math/linear-algebra/' },
+          ],
+        },
+        {
+          text: '概率统计',
+          collapsed: true,
+          items: [
+            { text: '概率统计', link: '/math/probability/' },
           ],
         },
       ],
