@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '考研计算机通关教程',
-  description: '408 计算机学科专业基础综合 — 数据结构 · 组成原理 · 操作系统 · 计算机网络',
+  title: '408 + 数学 考研笔记',
+  description: '考研笔记 — 数据结构 · 组成原理 · 操作系统 · 计算机网络 · 数学',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
@@ -18,6 +18,7 @@ export default defineConfig({
       { text: '组成原理', link: '/computer-organization/' },
       { text: '操作系统', link: '/operating-system/' },
       { text: '计算机网络', link: '/computer-network/' },
+      { text: '数学', link: '/math/' },
     ],
 
     sidebar: {
@@ -76,6 +77,17 @@ export default defineConfig({
             { text: '网络层', link: '/computer-network/network-layer' },
             { text: '传输层', link: '/computer-network/transport-layer' },
             { text: '应用层', link: '/computer-network/application-layer' },
+          ],
+        },
+      ],
+      '/math/': [
+        {
+          text: '考研数学',
+          collapsed: false,
+          items: [
+            { text: '高等数学', link: '/math/' },
+            { text: '线性代数', link: '/math/linear-algebra' },
+            { text: '概率统计', link: '/math/probability' },
           ],
         },
       ],

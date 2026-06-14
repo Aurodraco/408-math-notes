@@ -1,7 +1,7 @@
 {
-  "name": "cs-kaoyan",
+  "name": "408-math-notes",
   "version": "1.0.0",
-  "description": "考研计算机通关教程 - 408 计算机学科专业基础综合",
+  "description": "考研笔记 — 408 计算机 + 数学，纯前端静态教程",
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev",
