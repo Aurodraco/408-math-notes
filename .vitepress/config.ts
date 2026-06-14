@@ -1,50 +1,33 @@
 import { defineConfig } from 'vitepress'
-import katex from 'markdown-it-katex'
 
 export default defineConfig({
   title: '408 + 数学 考研笔记',
-  description: '考研笔记 — 数据结构 · 组成原理 · 操作系统 · 计算机网络 · 数学',
+  description: '考研笔记 — 数据结构 · 计算机组成原理 · 操作系统 · 计算机网络 · 数学',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
   srcExclude: ['progress.md'],
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css' }],
   ],
 
   markdown: {
-    config: (md) => {
-      md.use(katex)
-    },
+    math: true,
   },
 
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '数据结构', link: '/data-structure/' },
-      { text: '组成原理', link: '/computer-organization/' },
+      { text: '计算机组成原理', link: '/computer-organization/' },
       { text: '操作系统', link: '/operating-system/' },
       { text: '计算机网络', link: '/computer-network/' },
-      { text: '数学', link: '/calculus/' },
+      { text: '数据结构', link: '/data-structure/' },
+      { text: '高等数学', link: '/calculus/' },
+      { text: '线性代数', link: '/linear-algebra/' },
+      { text: '概率统计', link: '/probability/' },
     ],
 
     sidebar: {
-      '/data-structure/': [
-        {
-          text: '数据结构',
-          collapsed: false,
-          items: [
-            { text: '概述', link: '/data-structure/' },
-            { text: '线性表', link: '/data-structure/linear-list' },
-            { text: '栈和队列', link: '/data-structure/stack-queue' },
-            { text: '树与二叉树', link: '/data-structure/tree' },
-            { text: '图', link: '/data-structure/graph' },
-            { text: '查找', link: '/data-structure/search' },
-            { text: '排序', link: '/data-structure/sort' },
-          ],
-        },
-      ],
       '/computer-organization/': [
         {
           text: '计算机组成原理',
@@ -85,6 +68,21 @@ export default defineConfig({
             { text: '网络层', link: '/computer-network/network-layer' },
             { text: '传输层', link: '/computer-network/transport-layer' },
             { text: '应用层', link: '/computer-network/application-layer' },
+          ],
+        },
+      ],
+      '/data-structure/': [
+        {
+          text: '数据结构',
+          collapsed: false,
+          items: [
+            { text: '概述', link: '/data-structure/' },
+            { text: '线性表', link: '/data-structure/linear-list' },
+            { text: '栈和队列', link: '/data-structure/stack-queue' },
+            { text: '树与二叉树', link: '/data-structure/tree' },
+            { text: '图', link: '/data-structure/graph' },
+            { text: '查找', link: '/data-structure/search' },
+            { text: '排序', link: '/data-structure/sort' },
           ],
         },
       ],
