@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/408-math-notes/',
   lastUpdated: true,
   cleanUrls: true,
-  srcExclude: ['progress.md'],
+  srcExclude: ['progress.md', 'README.md'],
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
