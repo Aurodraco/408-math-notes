@@ -32,7 +32,7 @@ features:
   - icon: 📐
     title: 考研数学
     details: 高等数学 · 线性代数 · 概率统计 —— 工科数学三合一，一题一解，步步推导。
-    link: /math/calculus/
+    link: /calculus/
 ---
 
 ## 备考建议

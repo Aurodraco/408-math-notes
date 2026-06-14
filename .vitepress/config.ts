@@ -26,7 +26,7 @@ export default defineConfig({
       { text: '组成原理', link: '/computer-organization/' },
       { text: '操作系统', link: '/operating-system/' },
       { text: '计算机网络', link: '/computer-network/' },
-      { text: '数学', link: '/math/calculus/' },
+      { text: '数学', link: '/calculus/' },
     ],
 
     sidebar: {
@@ -88,33 +88,37 @@ export default defineConfig({
           ],
         },
       ],
-      '/math/': [
+      '/calculus/': [
         {
           text: '高等数学',
           collapsed: false,
           items: [
-            { text: '函数极限连续', link: '/math/calculus/' },
-            { text: '一元函数微分学', link: '/math/calculus/differential' },
-            { text: '一元函数积分学', link: '/math/calculus/integral' },
-            { text: '向量与空间解析几何', link: '/math/calculus/vector-geometry' },
-            { text: '多元函数微分学', link: '/math/calculus/multi-differential' },
-            { text: '多元函数积分学', link: '/math/calculus/multi-integral' },
-            { text: '无穷级数', link: '/math/calculus/infinite-series' },
-            { text: '常微分方程', link: '/math/calculus/ode' },
+            { text: '函数极限连续', link: '/calculus/' },
+            { text: '一元函数微分学', link: '/calculus/differential' },
+            { text: '一元函数积分学', link: '/calculus/integral' },
+            { text: '向量与空间解析几何', link: '/calculus/vector-geometry' },
+            { text: '多元函数微分学', link: '/calculus/multi-differential' },
+            { text: '多元函数积分学', link: '/calculus/multi-integral' },
+            { text: '无穷级数', link: '/calculus/infinite-series' },
+            { text: '常微分方程', link: '/calculus/ode' },
           ],
         },
+      ],
+      '/linear-algebra/': [
         {
           text: '线性代数',
-          collapsed: true,
+          collapsed: false,
           items: [
-            { text: '线性代数', link: '/math/linear-algebra/' },
+            { text: '线性代数', link: '/linear-algebra/' },
           ],
         },
+      ],
+      '/probability/': [
         {
           text: '概率统计',
-          collapsed: true,
+          collapsed: false,
           items: [
-            { text: '概率统计', link: '/math/probability/' },
+            { text: '概率统计', link: '/probability/' },
           ],
         },
       ],
