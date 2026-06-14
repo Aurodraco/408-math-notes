@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import katex from 'markdown-it-katex'
 
 export default defineConfig({
   title: '408 + 数学 考研笔记',
@@ -9,7 +10,14 @@ export default defineConfig({
   srcExclude: ['progress.md'],
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css' }],
   ],
+
+  markdown: {
+    config: (md) => {
+      md.use(katex)
+    },
+  },
 
   themeConfig: {
     nav: [
