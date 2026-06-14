@@ -1,8 +1,8 @@
 ## 写作进度
 
 - **当前阶段**：第五阶段 — 考研数学
-- **当前会话**：数学 6 / 16
-- **已完成章节**：~321 / ~340
+- **当前会话**：数学 7 / 16
+- **已完成章节**：~322 / ~340
 
 ### 数学目录结构
 
@@ -14,7 +14,7 @@ calculus/                     # 高等数学
 ├── vector-geometry.md        # 向量与空间解析几何 ✅
 ├── multi-differential.md     # 多元函数微分学 ✅
 ├── multi-integral.md         # 多元函数积分学 ✅
-├── infinite-series.md        # 无穷级数 📝
+├── infinite-series.md        # 无穷级数 ✅
 └── ode.md                    # 常微分方程 📝
 linear-algebra/
 └── index.md                  # 线性代数 📝
@@ -26,4 +26,4 @@ probability/
 
 | # | 文件 | 内容 |
 |---|------|------|
-| 7 | `calculus/infinite-series.md` | 数项级数审定、幂级数收敛与展开、傅里叶级数 |
+| 8 | `calculus/ode.md` | 一阶/高阶线性微分方程、常系数解法、微分方程应用 |
