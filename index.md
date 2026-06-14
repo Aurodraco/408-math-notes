@@ -12,10 +12,6 @@ hero:
     - theme: alt
       text: 查看备考建议
       link: /#备考建议
-  image:
-    src: null
-    alt: null
-
 features:
   - icon: 📊
     title: 数据结构

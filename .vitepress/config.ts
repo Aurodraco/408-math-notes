@@ -11,7 +11,6 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: null,
     nav: [
       { text: '首页', link: '/' },
       { text: '数据结构', link: '/data-structure/' },
