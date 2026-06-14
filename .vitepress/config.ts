@@ -4,6 +4,7 @@ export default defineConfig({
   title: '408 + 数学 考研笔记',
   description: '考研笔记 — 数据结构 · 计算机组成原理 · 操作系统 · 计算机网络 · 数学',
   lang: 'zh-CN',
+  base: '/408-math-notes/',
   lastUpdated: true,
   cleanUrls: true,
   srcExclude: ['progress.md'],
