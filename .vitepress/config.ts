@@ -6,6 +6,7 @@ export default defineConfig({
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
+  srcExclude: ['progress.md'],
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
